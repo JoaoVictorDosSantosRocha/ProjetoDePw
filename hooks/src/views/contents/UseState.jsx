@@ -43,7 +43,7 @@ const UseState = props => {
 
                 <p className="mensagem">{mensagem}</p>
 
-                <h2>Aqui o usuário se cadastraria para participar do chat </h2>
+                <h2>Aqui o usuário se cadastraria para participar do chat</h2>
             </div>
         </div>
     )

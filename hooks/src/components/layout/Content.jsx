@@ -3,7 +3,6 @@ import React from "react"
 import { Switch, Route } from 'react-router-dom'
 import Projeto from '../../views/contents/Projeto'
 import UseState from '../../views/contents/UseState'
-import UseEffect from '../../views/contents/UseEffect'
 import UseContext from '../../views/contents/UseContext'
 import NaoEncontrado from '../../views/contents//NaoEncontrado'
 import Beneficios from '../../views/contents/Beneficios'
@@ -33,9 +32,6 @@ const Content = props => (
             <Route path="/Chat">
                 <Chat />
             </Route>    
-            <Route path="/UseEffect">
-                <UseEffect />
-            </Route>
             <Route path="/UseContext">
                 <UseContext />
             </Route>
