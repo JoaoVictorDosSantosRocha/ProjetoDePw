@@ -18,8 +18,7 @@ const UseState = props => {
     return (
         <div>
             <div className="titulo">
-                <h1>useState</h1>
-                <h2>Manipula Estados em componentes funcionais</h2>
+                <h1>Cadastro</h1>
             </div>
 
             <div className="conteudo">
@@ -39,15 +38,12 @@ const UseState = props => {
 
                 <button
                 className="botao"
-                onClick={ () => setMensagem('Olá ${nome} ${sobrenome}, seja bem-vindo!') }
+                onClick={ () => setMensagem('Cadastro concluído :D !!!') }
                 >Ok</button>
 
                 <p className="mensagem">{mensagem}</p>
 
-                <button
-                className="botao"
-                onClick={ () => alteraNomeContexto(nome) }
-                >Altera contexto (Store)</button>
+                <h2>Aqui o usuário se cadastraria para participar do chat </h2>
             </div>
         </div>
     )

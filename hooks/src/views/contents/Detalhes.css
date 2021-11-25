@@ -1,0 +1,15 @@
+p {
+    font-family: Arial Narrow Bold;
+    font-style: oblique;
+    text-align: justify;
+    font-size: larger;
+    font-stretch: normal;
+}
+
+h2 {
+    font-family: Arial;
+    font-style: normal;
+    text-align: justify;
+    font-size: larger;
+    font-stretch: normal;
+}

@@ -22,8 +22,9 @@
     padding: 10px;
     margin-bottom: 10px;
     text-decoration: none;
-    color: #a8dadc;
+    color: white;
     font-size: 1.5rem;
+    font-family: Arial;
 }
 
 .Menu li a:hover {

@@ -7,17 +7,23 @@ const Menu = props => (
         <nav>
             <ul>
                 <li> 
-                    <Link to="/">Hooks</Link>
+                    <Link to="/Inicial">Início</Link>
                 </li>
                 <li> 
-                    <Link to="/UseState">useState()</Link>
+                    <Link to="/Projeto">Projeto</Link>
                 </li>
                 <li> 
-                    <Link to="/UseEffect">useEffect()</Link>
-                </li>                                
+                    <Link to="/Beneficios">Benefícios da música</Link>
+                </li>
                 <li> 
-                    <Link to="/UseContext">useContext()</Link>
+                    <Link to="/UseState">Cadastresse</Link>
+                </li>   
+                <li> 
+                    <Link to="/Chat">Chat</Link>
                 </li>                               
+                <li> 
+                    <Link to="/Detalhes">Detalhes</Link>
+                </li>                                 
             </ul>
         </nav>
     </aside>
