@@ -14,9 +14,6 @@ const Menu = props => (
                 </li>
                 <li> 
                     <Link to="/Beneficios">Benefícios da música</Link>
-                </li>
-                <li> 
-                    <Link to="/UseState">Cadastresse</Link>
                 </li>   
                 <li> 
                     <Link to="/Chat">Chat</Link>
