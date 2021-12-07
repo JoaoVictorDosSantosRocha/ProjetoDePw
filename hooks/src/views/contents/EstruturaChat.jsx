@@ -9,21 +9,32 @@ import { useCollectionData } from "react-firebase9-hooks/firestore";
 
 const Messages = styled.div`
 display: flex;
-height: 100%;
+height: calc(100% - 120px);
 flex-direction: column;
 justify-content: flex-end;
 `;
 
 const MessageContainer = styled.div`
 width: 100%;
+display: flex;
+flex-direction: ${props => props.isMine && "row-reverse"};
+align-items: center;
 `;
 
 const Message = styled.div`
-width: auto;
+width: 300px;
 background: lightGrey;
 border-radius: 25px;
 padding: 10px;
 margin: 8px;
+`;
+
+const Avatar = styled.img`
+width: 35px;
+height: 35px;
+border-radius: 50%;
+margin-right: 5px;
+margin-left: 5px;
 `;
 
 const SendMessagesContainer = styled.form`
@@ -74,7 +85,8 @@ function EstruturaChat() {
  return (<>
 <Messages>
     {messages && messages.map((msg) => 
-    <MessageContainer>
+    <MessageContainer isMine={msg.uid === user.uid}>
+        <Avatar src={msg.photoURL}/>
         <Message>
             {msg.text}
         </Message>
